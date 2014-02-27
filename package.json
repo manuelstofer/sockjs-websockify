@@ -1,6 +1,6 @@
 {
   "name": "sockjs-websockify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SockJS connection wrapper. Makes connections more web socket like.",
   "main": "src/websockify.js",
   "scripts": {
