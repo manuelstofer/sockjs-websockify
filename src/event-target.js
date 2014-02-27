@@ -4,7 +4,6 @@
 
 'use strict';
 
-var util = require('./util');
 
 /*
  * ***** BEGIN LICENSE BLOCK *****
@@ -27,7 +26,7 @@ module.exports = {
             this._listeners[eventType] = [];
         }
         var arr = this._listeners[eventType];
-        if (util.indexOf(arr, listener) === -1) {
+        if (arr.indexOf(listener) === -1) {
             arr.push(listener);
         }
         return;
@@ -38,7 +37,7 @@ module.exports = {
             return;
         }
         var arr = this._listeners[eventType];
-        var idx = util.indexOf(arr, listener);
+        var idx = arr.indexOf(listener);
         if (idx !== -1) {
             if (arr.length > 1) {
                 this._listeners[eventType] = arr.slice(0, idx).concat(arr.slice(idx + 1));
