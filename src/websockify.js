@@ -1,6 +1,8 @@
 
 var EventTarget = require('./event-target');
 
+module.exports = Websockify;
+
 function Websockify (conn) {
     if (!(this instanceof Websockify)) {
         return new Websockify(conn);
