@@ -1,0 +1,18 @@
+{
+  "name": "sockjs-websockify",
+  "version": "0.0.0",
+  "description": "SockJS connection wrapper. Makes connections more web socket like.",
+  "main": "src/websockify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "sockjs",
+    "web",
+    "socket",
+    "sockify"
+  ],
+  "author": "Manuel Stofer",
+  "license": "MIT"
+}
