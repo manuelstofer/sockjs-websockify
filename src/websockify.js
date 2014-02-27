@@ -11,7 +11,7 @@ function Websockify (conn) {
     this.readyState = this.OPEN;
 
     this.close = this.conn.close.bind(this.conn);
-    this.send = this.conn.send.bind(this.conn);
+    this.send = this.conn.write.bind(this.conn);
 
     this.conn.on('close', function () {
         this.readyState = this.CLOSED;
