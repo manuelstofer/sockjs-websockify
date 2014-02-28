@@ -21,7 +21,7 @@ function Websockify (conn) {
         this.readyState = this.OPEN;
     }.bind(this));
 
-    this.conn.on('message', function (data) {
+    this.conn.on('data', function (data) {
         this.dispatchEvent({ type: 'message', data: data });
     }.bind(this))
 
