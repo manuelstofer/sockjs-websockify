@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+    <script>
+        var sock = new SockJS('http://localhost:3000/sockjs');
+        sock.onopen = function() {
+            sock.send('hello');
+        };
+        sock.addEventListener('message', console.log.bind(console));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
